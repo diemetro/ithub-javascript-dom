@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dmitriy Plaschinskiy">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+   <title>Forms.JS DOM KT4</title>
+</head>
+<body>
+<div class="card-form-container">
+    <h2>Заполните информацию о банковской карте:</h2>
+    <form id="card-form">
+      <div class="form-group">
+        <label for="bank-name">Название банка:</label>
+        <select id="bank-name" name="bank-name" required>
+          <option value="">Выберите банк</option>
+          <option value="Тинькофф Банк">Тинькофф Банк</option>
+          <option value="Сбербанк">Сбербанк</option>
+          <option value="Открытие Банк">Открытие Банк</option>
+          <option value="Райффайзен Банк">Райффайзен Банк</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="payment-system">Тип платежной системы:</label>
+        <select id="payment-system" name="payment-system" required>
+          <option value="">Выберите тип платежной системы</option>
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="maestro">Maestro</option>
+          <option value="mir">МИР</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="card-number">Номер карты:</label>
+        <input type="text" id="card-number" name="card-number"  maxlength="20" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="XXXX XXXX XXXX XXXX" required>
+      </div>
+      <div class="form-group">
+        <label for="card-holder-name">Имя держателя карты:</label>
+        <input type="text" id="card-holder-name" name="card-holder-name" required>
+      </div>
+      <div class="form-group">
+        <label for="expiration-date">Месяц и год окончания карты:</label>
+        <input type="text" id="expiration-date" name="expiration-date" maxlength="5" pattern="(0?[1-9]|1[0-2])/\d{2}" placeholder="00/00" required>
+
+      </div>
+      <div class="v-card-container">
+        <div id="v-card" class="v-card">
+          <div class="v-card-logo">
+            <img id="bank-logo" src="" alt="">
+            <div id="v-bank-name" class ="v-bank-name">BANK</div>
+          </div>
+          <div>&nbsp;</div>
+          <div id="v-card-number" class ="v-card-number">1234 5678 1234 5678</div>
+          <div>&nbsp;</div>
+          <div class="v-card-info">
+            <div id="v-card-holder-name" class="v-card-holder-name">CARD HOLDER</div>
+            <div id="v-expiration-date" class="v-expiration-date">MM/YY</div>
+          </div>
+          <div class="ps-logo">
+            <img id="payment-system-logo" src="" alt="">
+          </div>
+        </div>
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
+    <table id="card-table">
+      <thead>
+        <tr>
+          <th>Название банка</th>
+          <th>Тип платежной системы</th>
+          <th>Номер карты</th>
+          <th>Имя держателя карты</th>
+          <th>Месяц и год окончания карты</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="index.js"></script>     
+</body>
+</html>

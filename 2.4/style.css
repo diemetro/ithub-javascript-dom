@@ -1,0 +1,127 @@
+.card-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .card-form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="month"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  select {
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf6d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+    }
+    
+    .v-card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    
+   
+    .v-card {
+      width: 400px;
+      height: 250px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+    }
+
+    .v-card-logo {
+      /* Стили для логотипа банка */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      vertical-align: middle;
+    }
+
+     
+    .ps-logo {
+      /* Стили для логотипа платежной системы */
+      text-align: right;
+    }
+
+    .v-card-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .v-bank-name {
+      font-size: 20px;
+    }
+     .v-card-number {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .v-card-holder-name {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    
+    .v-expiration-date {
+      font-size: 20px;
+    }
+    
+
+    #card-table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    #card-table th,
+    #card-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    }
+    
+    #card-table th {
+    background-color: #f2f2f2;
+    }
+  
