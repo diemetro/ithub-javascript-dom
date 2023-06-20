@@ -12,7 +12,7 @@ const virtcardholderName = document.getElementById('v-card-holder-name');
 const expirationDate = document.getElementById('expiration-date');
 const virtexpirationDate= document.getElementById('v-expiration-date');
 
-
+// По событию ввода в поле данных
 cardForm.addEventListener('input', (event) => {
     event.preventDefault();
     const valuebankName = cardForm.elements['bank-name'].value;
@@ -32,9 +32,9 @@ cardForm.addEventListener('input', (event) => {
     paymentSystemLogo.src = getPaymentSystemLogoUrl(valuepaymentSystem);
   });
 
+  // По событию нажатия кнопки 'Отправить'
   cardForm.addEventListener('submit', (event) => {
     event.preventDefault();
-
     const valuebankName = cardForm.elements['bank-name'].value;
     const valuepaymentSystem = cardForm.elements['payment-system'].value;
     const valuecardNumber = cardForm.elements['card-number'].value;
@@ -77,7 +77,6 @@ function getBankLogoUrl(bankName) {
     }
   }
 
-
 function getPaymentSystemLogoUrl(paymentSystem) {
     switch (paymentSystem) {
         case 'visa':
@@ -93,7 +92,6 @@ function getPaymentSystemLogoUrl(paymentSystem) {
       }
     }
 
-
 for (var i in ['input', 'change', 'blur', 'keyup']) {
     cardNumber.addEventListener('input', formatCardCode, false);
 }
@@ -101,7 +99,6 @@ function formatCardCode() {
     var cardNumber = this.value.replace(/[^\d]/g, '').substring(0,16);
     cardNumber = cardNumber != '' ? cardNumber.match(/.{1,4}/g).join(' ') : '';
     this.value = cardNumber;
-    // cardForm.cardNumber.value=this.value.split(" ").join("");
 }
 
 
