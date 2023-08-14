@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш умный дом.Главная</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="loadContent('main.html')" href="#">Главная страница</a></li>
+                <li><a onclick="loadContent('devices.html')" href="#">Устройства</a></li>
+                <li><a onclick="loadContent('setup.html')" href="#">Установка и настройка</a></li>
+                <li><a onclick="loadContent('cases.html')" href="#">Умный дом в действии</a></li>
+                <li><a onclick="loadContent('contacts.html')" href="#">Контакты</a></li>
+                <li><a id="devices" href="#">Устройства</a></li>
+                <li><a id="linkToPage2" href="#">Перейти на страницу 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main"></main>
+    <footer>
+        &copy; 2023 Ваш умный дом. Все права защищены.
+    </footer>
+    <script>
+        function loadContent(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("main").innerHTML = data;
+                    // Выполнение скриптов на загруженной странице
+                    const scripts = document.getElementById("main").querySelectorAll("script");
+                    scripts.forEach(script => {
+                        eval(script.innerText);
+                    });
+                })
+
+
+                
+                .catch(error => console.error('Error:', error));
+        }
+
+        // Загрузка контента главной страницы при открытии сайта
+        loadContent('main.html');
+        // Выполнение кода после загрузки контента
+    window.onload = function () {
+        // Ваш код, который будет выполнен после загрузки содержимого
+        // Например:
+        var element = document.getElementById('block-tr');
+        element.style.opacity = '1'; // Устанавливаем полную непрозрачность
+               
+    };
+    </script>
+  
+
+    </body>
+</html>

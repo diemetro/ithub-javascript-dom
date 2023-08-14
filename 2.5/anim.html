@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анимация с JavaScript</title>
+    <style>
+      #box {
+          width: 600px;
+          height: 100px;
+          background-color: white;
+          opacity: 0; /* Начальная непрозрачность элемента */
+          transition: opacity 3s;
+      }
+  </style>
+</head>
+<body>
+    <div id="box"><h1>Добро пожаловать в "Ваш умный дом"!</h1></div>
+    <script>
+      // Функция для выполнения появления элемента
+      function fadeInElement() {
+          var element = document.getElementById('box');
+          element.style.opacity = '1'; // Устанавливаем полную непрозрачность
+      }
+
+      // Вызываем функцию после загрузки страницы
+      window.onload = fadeInElement;
+  </script>
+</body>
+</html>
