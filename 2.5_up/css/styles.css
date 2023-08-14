@@ -1,0 +1,54 @@
+@import url("carousel.css");
+
+@import url("nav.css");
+
+@import url("counter.css");
+
+@import url("search.css");
+
+@import url("gallery.css");
+
+ @import url("form.css"); 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 70px; 
+    justify-content: center;
+    background-color: #333;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer-txt {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    min-height: 170px; 
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 50px 280px 50px 280px;
+}
+
+.index-txt-h3 {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.index-txt-h6 {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+

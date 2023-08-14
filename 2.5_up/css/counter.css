@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    flex-direction: raw;
+}
+
+.counter {
+    text-align: center;
+}
+
+.counter h3 {
+    padding: 0.5rem 0;
+    font-size: 3.3rem;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.counter h6 {
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0 auto 0;
+}
+
+.icon {
+    height: 5rem;
+    width: auto;
+}
+
+.imgContainer .popup {
+    display: none;
+    position: absolute;
+    background: tomato;
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 160px;
+    height: 200px;
+    margin-top: -1px;
+    margin-left: 100px;
+    color: white;
+    padding: 10px;
+  }
+  .imgContainer .popup:before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    z-index: 1;
+    border: solid 25px transparent;
+    border-right-color: tomato;
+    color:tomato;
+  }

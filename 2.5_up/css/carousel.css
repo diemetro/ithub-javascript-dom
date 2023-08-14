@@ -1,0 +1,36 @@
+.carousel-item {
+    max-height: 800px;
+    text-align: center;
+}
+
+.carousel > .carousel-inner > .carousel-item > img{
+    width: 100%;
+    height: 630px;    
+}
+
+.carousel-indicators button {
+    height: 15px !important;
+    width: 15px !important;
+    margin: 0 10px !important;
+    border-radius: 100%;
+    background-color: white !important;
+}
+
+.carousel-caption {
+    bottom: 20px;
+}
+
+.carousel-caption h3 {
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto 0;
+    font-size: 2rem;
+  }
+
+
+.carousel-txt {
+    font-size: 3rem;
+    color:tomato;
+}

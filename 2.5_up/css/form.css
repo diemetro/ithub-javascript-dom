@@ -1,0 +1,56 @@
+ 
+  .form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 130px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+
+  input, textarea, #submit-btn{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  #submit-btn {
+    background-color: tomato;
+    color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  #success-message {
+    display: none;
+    color: black;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  
+
+  .mail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+  }
+  
+  .animate {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  

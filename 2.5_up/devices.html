@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <title>Устройства</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="nav-bar">
+            <a href="index.html">Главная</a>
+            <a href="devices.html">Устройства</a>
+            <div class="drop-down">
+              <button class="drop-btn" onclick="myFunction()">Поддержка
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="drop-down-content" id="submenu">
+                <a href="setup.html">Установка и настройка</a>
+                <a href="cases.html">Умный дом в действии</a>
+                <a href="contacts.html">Контакты</a>
+              </div>
+            </div>
+            <div style="margin: 0px 450px;">
+            <div id="search">
+              <input id="input" placeholder="Поиск"/>
+              <button id="button"><i class="fa fa-search"></i></button>
+              <div class="spinner">
+                <i class="fa fa-spinner"></i>
+              </div>
+            </div>
+        </div>  
+        </div>
+    </nav>
+</header>
+      <section>
+        <div class="index">
+          <h3 class="index-txt-h3">Устройства вашего умного дома</h3>
+          <h6 class="index-txt-h6">Сделайте ваш дом умным и уникальным местом, где каждое устройство служит вашему комфорту и удовольствию. Просмотрите наши инновационные умные устройства и начните путешествие в будущее уже сегодня!</h6>
+        </div>
+      </section>
+      <section>
+        <div class="grid">
+          <div class="item">
+            <img src="img/hwd/hwd1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+          <div class="item">
+            <img src="img/hwd/hwd9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">          
+            <div class="mySlides">
+              <div class="numbertext">1 / 9</div>
+              <img src="img/hwd/hwd1.jpg">
+            </div>        
+            <div class="mySlides">
+              <div class="numbertext">2 / 9</div>
+              <img src="img/hwd/hwd2.jpg">
+            </div>        
+            <div class="mySlides">
+              <div class="numbertext">3 / 9</div>
+              <img src="img/hwd/hwd3.jpg">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 9</div>
+              <img src="img/hwd/hwd4.jpg">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 9</div>
+              <img src="img/hwd/hwd5.jpg">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 9</div>
+              <img src="img/hwd/hwd6.jpg">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 9</div>
+              <img src="img/hwd/hwd7.jpg">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 9</div>
+              <img src="img/hwd/hwd8.jpg">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9 / 9</div>
+              <img src="img/hwd/hwd9.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div >
+              <img class="demo" src="img/hwd/hwd1.jpg" onclick="currentSlide(1)" alt="Умная лампа">
+              <img class="demo" src="img/hwd/hwd2.jpg" onclick="currentSlide(2)" alt="Дверной (оконный) датчик">
+              <img class="demo" src="img/hwd/hwd3.jpg" onclick="currentSlide(3)" alt="Контроллер кондиционера">
+              <img class="demo" src="img/hwd/hwd4.jpg" onclick="currentSlide(4)" alt="Центр управления умным домом">
+              <img class="demo" src="img/hwd/hwd5.jpg" onclick="currentSlide(5)" alt="Датчик движения">
+              <img class="demo" src="img/hwd/hwd6.jpg" onclick="currentSlide(6)" alt="Умная розетка">
+              <img class="demo" src="img/hwd/hwd7.jpg" onclick="currentSlide(7)" alt="Умное реле">
+              <img class="demo" src="img/hwd/hwd8.jpg" onclick="currentSlide(8)" alt="Беспроводной выключатель">
+              <img class="demo" src="img/hwd/hwd9.jpg" onclick="currentSlide(9)" alt="Датчик вибраций">
+            </div>      
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <p class="footer-txt">&copy; 2023 Ваш умный дом. Все права защищены</p>
+      </div>
+    </footer>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
+
