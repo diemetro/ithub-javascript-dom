@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword-Based Content Downloader</title>
+    <style>
+        #urls-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #download-status {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="keyword">Enter a keyword:</label>
+    <input type="text" id="keyword">
+    <button onclick="getUrls()">Get URLs</button>
+
+    <ul id="urls-list"></ul>
+
+    <div id="download-status">
+        <p>Downloading...</p>
+        <progress id="progress" value="0" max="100"></progress>
+        <p id="status"></p>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
