@@ -49,7 +49,7 @@ io.on('connection', (socket) => {
                     message: `Downloading... ${Math.round((downloadedSize / fileSize) * 100)}%`
                 });
             } else {
-                // Download complete
+                
                 clearInterval(downloadInterval);
                 socket.emit('downloadComplete', { message: 'Download complete!' });
             }
