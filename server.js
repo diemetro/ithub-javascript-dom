@@ -32,7 +32,7 @@ io.on('connection', (socket) => {
     console.log('Client connected');
 
     socket.on('download', ({ url }) => {
-        // Emulate downloading by sending progress updates
+
         const fileSize = 1024 * 1024; // 1 MB
         const chunkSize = 1024; // 1 KB
 
@@ -53,7 +53,7 @@ io.on('connection', (socket) => {
                 clearInterval(downloadInterval);
                 socket.emit('downloadComplete', { message: 'Download complete!' });
             }
-        }, 1000); // Simulate progress every second
+        }, 1000); 
     });
 
     socket.on('disconnect', () => {
