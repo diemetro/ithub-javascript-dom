@@ -3,11 +3,6 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-// const keywordsUrls = {
-//     "js": ["http://example.com/js1", "http://example.com/js2"],
-//     "pt": ["http://example.com/python1", "http://example.com/python2"]
-// };
-
 const keywordsUrls = {
     'devops': ['https://about.gitlab.com/topics/devops/', 'http://deemetro.beget.tech/img/devops.png'],
     'docker': ['http://deemetro.beget.tech/img/docker.png', 'http://deemetro.beget.tech/img/dockerswarm.png', 'https://www.ibm.com/topics/docker'],
